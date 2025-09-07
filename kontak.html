@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="kontak.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Navbar -->
+        <nav>
+            <div class="logo">
+                <img src="Foto/logo.png" alt="logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+                <li><a href="profil.html">Profil</a></li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+
+        <!-- Halaman Kontak Lengkap -->
+        <section class="kontak card clearfix" id="kontak">
+            <h1>Hubungi Saya</h1>
+            <p>Silakan isi formulir di bawah atau hubungi saya melalui informasi kontak yang tersedia. Saya akan
+                dengan senang hati merespons pesan Anda secepat mungkin.</p>
+
+            <!-- Form Kontak -->
+            <form class="form-kontak">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+                <label for="subjek">Subjek</label>
+                <input type="text" id="subjek" name="subjek" placeholder="Masukkan subjek pesan">
+
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda" rows="5" required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+
+            <!-- Info Kontak -->
+            <div class="info-kontak">
+                <h3>Informasi Kontak</h3>
+                <p><strong>Email:</strong> megaalaelawati@gmail.com</p>
+                <p><strong>WhatsApp:</strong> +62 838-2161-2483</p>
+                <p><strong>Alamat:</strong> Bandung, Jawa Barat, Indonesia</p>
+            </div>
+
+            <!-- Sosial Media -->
+            <div class="sosmed">
+                <h3>Ikuti Saya</h3>
+                <a href="https://www.instagram.com/megalaelawati_">Instagram</a> |
+                <a href="https://www.linkedin.com/in/mega-laelawati-68b06936a">LinkedIn</a> |
+                <a href="https://www.facebook.com/mega.laelawati.9/">Facebook</a>
+            </div>
+
+            <!-- Google Maps -->
+            <div class="maps">
+                <h3>Lokasi Saya</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.973964448575!2d110.41474707499805!3d-7.809115792228201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5793b44a5b11%3A0x301576d14feb720!2sBandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1709897368432!5m2!1sid!2sid"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Mega Laelawati. Dibuat dengan 🤍</p>
+        </footer>
+    </div>
+</body>
+
+</html>

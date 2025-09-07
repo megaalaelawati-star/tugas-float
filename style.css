@@ -9,9 +9,6 @@ body {
     background-color: white;
 }
 
-.container {
-    width: 100%;
-}
 
 nav {
     background-color: #ff771f;
@@ -78,13 +75,14 @@ nav ul li a:hover {
 
 .section1 .box1 h1 {
     font-size: 2rem;
-    margin: 40px 0 15px 0;
+    margin: 15px 0;
 }
 
 .section1 .box1 p {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .section1 .box1 a.button {
@@ -136,7 +134,6 @@ nav ul li a:hover {
     overflow: hidden;
     text-align: center;
     padding: 10px;
-    box-sizing: border-box;
 }
 
 .section2 .box img {
@@ -181,4 +178,12 @@ nav ul li a:hover {
     background: white;
     color: #ff771f;
     border: 2px solid #ff771f;
+}
+
+footer {
+    background-color: #ff771f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
 }

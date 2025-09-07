@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+}
+
+nav {
+    background-color: #ff771f;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 200px;
+    height: 40px;
+    margin: 5px 0 0 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 40px;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #ff3d00;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.card {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #f89e36e8;
+    border-radius: 20px;
+    text-align: left;
+}
+
+/* Kontak Lengkap */
+.kontak h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.kontak p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.form-kontak {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.form-kontak label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.form-kontak input,
+.form-kontak textarea {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.form-kontak button {
+    background-color: #ff771f;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-kontak button:hover {
+    background-color: white;
+    color: #ff771f;
+    border: 2px solid #ff771f;
+}
+
+.info-kontak,
+.sosmed,
+.maps {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.sosmed a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.sosmed a:hover {
+    color: #ff3d00;
+}
+
+footer {
+    background-color: #ff771f;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
