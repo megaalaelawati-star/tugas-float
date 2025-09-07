@@ -55,6 +55,12 @@ nav ul li a:hover {
     color: #ff3d00;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .card {
     width: 95%;
     max-width: 1200px;
@@ -64,20 +70,15 @@ nav ul li a:hover {
     border-radius: 20px;
 }
 
-.section1 {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
 .section1 .box1 {
+    float: left;
     width: 60%;
     padding: 20px;
 }
 
 .section1 .box1 h1 {
     font-size: 2rem;
-    margin-bottom: 15px;
+    margin: 40px 0 15px 0;
 }
 
 .section1 .box1 p {
@@ -104,47 +105,80 @@ nav ul li a:hover {
 }
 
 .section1 .box2 {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    float: right;
+    width: 35%;
+    text-align: center;
 }
 
 .section1 .box2 img {
-    width: 400px;
-    height: auto;
+    width: 100%;
+    max-width: 350px;
     border-radius: 15px;
-}
-
-.section2 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .section2 h1 {
     font-size: 1.8rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .section2 .box-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    width: 100%;
 }
 
 .section2 .box {
+    float: left;
+    width: 23%;
+    margin: 1%;
     background-color: white;
     border-radius: 20px;
-    flex: 1;
-    min-height: 300px;
+    height: 350px;
     overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .section2 .box img {
-    width: 100%;           
-    height: 100%;          
-    object-fit: cover;     
-    border-radius: 20px;   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.kontak-singkat {
+    text-align: center;
+}
+
+.kontak-singkat h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.kontak-singkat p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.kontak-singkat .info-singkat p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.kontak-singkat a.button {
+    display: inline-block;
+    margin-top: 15px;
+    background: #ff771f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.kontak-singkat a.button:hover {
+    background: white;
+    color: #ff771f;
+    border: 2px solid #ff771f;
 }
